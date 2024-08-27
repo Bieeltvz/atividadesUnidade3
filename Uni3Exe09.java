@@ -16,3 +16,4 @@ public class Uni3Exe09 {
     
 }
 //Math.sqrt = raiz quadrada.
+//Math.pow(y, 1/3) = raiz cubica
