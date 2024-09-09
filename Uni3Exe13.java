@@ -1,20 +1,19 @@
-package Unidade3;
-
-import java.text.DecimalFormat;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Uni3Exe13 {
-public static void main(String[] args) {
-    Scanner teclado = new Scanner(System.in);
-    double azulejoEstampado = 12.50;
-    double altura = teclado.nextDouble();
-    double comprimento = teclado.nextDouble();
-    double qtdazulejosMQuadrado = 9;
-    double areaParede = comprimento * altura;
-    double area = areaParede * qtdazulejosMQuadrado;
-    double precoGasto = azulejoEstampado * area;
-    DecimalFormat df = new DecimalFormat("#.00");
-    System.out.println("o valor gasto é: R$ " + df.format(precoGasto));
-    teclado.close();
-}
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Qual o comprimento da parede em metros?");
+        int comprimento = teclado.nextInt();
+        System.out.println("Qual a altura da parede em metros?");
+        int altura = teclado.nextInt();
+        int metrosQuadrado = comprimento * altura;
+        double azulejoEmMetrosQuadrado = 12.50  * 9;
+        double valor = metrosQuadrado  * azulejoEmMetrosQuadrado;
+        DecimalFormat df = new DecimalFormat("######.##");
+        System.out.println("Valor gasto com a compra de azulejos R$" + df.format(valor));
+        teclado.close();      
+    }
+    
 }

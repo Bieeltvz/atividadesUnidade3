@@ -1,5 +1,3 @@
-package atividades;
-
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -23,3 +21,4 @@ public class Uni3Exe07 {
 
     }
     }
+

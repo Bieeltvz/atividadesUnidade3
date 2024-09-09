@@ -1,4 +1,3 @@
-package atividades;
 import java.util.Scanner;
 
 public class Uni3Exe6 {
